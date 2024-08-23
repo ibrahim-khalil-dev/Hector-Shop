@@ -25,7 +25,8 @@ body {
   height: 115vh;
   width: 100%;
   background-color: var(--secondary-color);
- 
+  background-image: linear-gradient(rgb(17, 17, 17, 0.7), rgb(17, 17, 17, 0.7)),
+    url("hectorjpg-020.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
