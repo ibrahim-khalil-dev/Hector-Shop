@@ -1032,7 +1032,7 @@ html {
   .box2,
   .box3,
   .box4 {
-    width: 86%;
+    width: 80%;
     height:400px;
     margin-bottom: 20px;
   }
@@ -1135,6 +1135,8 @@ html {
   .list-service {
     width: 100%; 
     padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .service-price { 
