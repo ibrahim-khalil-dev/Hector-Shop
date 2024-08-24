@@ -31,7 +31,7 @@ body {
   box-sizing: border-box; /* Include padding and border in the width/height */
 }
 .wrapper {
-  min-width: 1355px; /* Prevent layout from shrinking too much */
+  min-width: 1345px; /* Prevent layout from shrinking too much */
 }
 
 .Home, .Header, .info-bar, .nav-bar, .sidebar {
