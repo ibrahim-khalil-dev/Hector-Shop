@@ -1599,6 +1599,9 @@ html {
     #form-right {
       right: 63px !important;
     }
+    .menu-items1 {
+      display: none; 
+  }
   }
 .contact_title_section h1 {
   font-size: 55px;
