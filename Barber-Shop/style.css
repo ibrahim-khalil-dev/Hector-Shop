@@ -838,7 +838,7 @@ html {
     right: 240px;
   } 
 }
- /* Ensure the gallery section does not expand too much */
+/* General Styles */
 .gallery {
   width: 100%;
   display: flex;
@@ -849,7 +849,6 @@ html {
 }
 
 .gallery-container {
-  max-width: 1200px; /* Maximum width to prevent expansion on large screens */
   width: 100%; /* Allows the container to be responsive */
   display: flex;
   flex-direction: column; /* Stack containers vertically */
@@ -864,7 +863,7 @@ html {
 
 .container1 .img1, .container1 .img2, .container1 .img3, .container1 .img4,
 .container2 .img1, .container2 .img2, .container2 .img3, .container2 .img4 {
-  flex: 1 1 calc(25% - 10px); /* Make images flexible and adjust for gaps */
+  flex: 1 1 calc(25% - 10px); /* 4 images per row on laptop screens and above */
   box-sizing: border-box;
 }
 
@@ -874,13 +873,18 @@ html {
 }
 
 @media (max-width: 768px) {
-  .container1, .container2 {
-    flex-direction: column; /* Stack images vertically on smaller screens */
-  }
   .container1 .img1, .container1 .img2, .container1 .img3, .container1 .img4,
   .container2 .img1, .container2 .img2, .container2 .img3, .container2 .img4 {
-    flex: 1 1 100%; /* Ensure images take full width */
+    flex: 1 1 calc(50% - 10px); /* 2 images per row on mobile screens */
   }
+}
+.another{
+  max-width: 100%;
+  background: var(--primary-color);
+}
+#counter-wrapper{
+  max-width: 40%;
+  background: var(--primary-color);
 }
 
 
@@ -1214,6 +1218,7 @@ html {
   height: 250px;
   width: 200px;
   z-index: 2;
+  filter: drop-shadow(0px 68px 34px rgba(0, 0, 0, 0.5));
 }
 
 .team-box .box1 h2 {
