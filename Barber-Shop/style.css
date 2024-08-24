@@ -20,7 +20,38 @@ body {
  
 }
 /* General Styles */
- 
+.wrapper {
+  max-width: 1200px; /* Prevent content from expanding too much */
+  margin: 0 auto; /* Center the wrapper */ 
+  overflow: hidden;
+}
+
+.Home, .Header, .info-bar, .nav-bar, .sidebar {
+  width: 100%; /* Make sure the content spans the width of the wrapper */
+  box-sizing: border-box; /* Include padding and border in the width/height */
+}
+.wrapper {
+  min-width: 1364px; /* Prevent layout from shrinking too much */
+}
+
+.Home, .Header, .info-bar, .nav-bar, .sidebar {
+  min-width: 320px; /* Consistent with the wrapper */
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between; /* Adjust space between nav items */
+}
+
+.sidebar {
+  flex: 0 0 250px; /* Fixed width for sidebar */
+  max-width: 300px; /* Limit the expansion */
+}
+@media (min-width: 1600px) {
+  .wrapper {
+    max-width: 1400px; /* Further limit expansion on very large screens */
+  }
+}
+
 .Home {
   height: 115vh;
   width: 100%;
@@ -42,6 +73,7 @@ body {
   transition: 0.3s;
 }
  
+
 .nav-bar, .info-bar {
   height: 100px;
   width: 100% ;
@@ -53,7 +85,7 @@ body {
   .nav-bar, .info-bar {
     width: 94%;
   }
-}
+} 
 .nav-bar a img {
   height: 160px;
   width: 140px;
@@ -806,73 +838,51 @@ html {
     right: 240px;
   } 
 }
- 
- 
-.Gallary {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.Gallary img {
-  height: 270px;
+ /* Ensure the gallery section does not expand too much */
+.gallery {
   width: 100%;
-  object-fit: cover;
-}
-
-.Gallary .container1,
-.Gallary .container2 {
   display: flex;
-  flex-direction: row;
-  overflow: hidden;
+  justify-content: center; /* Centers the gallery container horizontally */
+  background-color: var(--secondary-color); /* Optional, for background color */
+  padding: 20px; /* Optional, for spacing around the gallery */
+  box-sizing: border-box;
 }
 
 .gallery-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 1200px; /* Maximum width to prevent expansion on large screens */
+  width: 100%; /* Allows the container to be responsive */
+  display: flex;
+  flex-direction: column; /* Stack containers vertically */
+  gap: 20px; /* Gap between containers */
 }
 
-@media only screen and (min-width: 1024px) { 
-  .Gallary .container1,
-  .Gallary .container2 { 
-    overflow: hidden;  
-  }
-
-  .Gallary img {
-    height: 270px;
-  }
+.container1, .container2 {
+  display: flex;
+  flex-wrap: wrap; /* Wrap images to the next line if necessary */
+  gap: 10px; /* Gap between images */
 }
 
-@media only screen and (max-width: 1024px) {
-  .Gallary{
-    flex-direction: row;
-  }
-  .Gallary img {
-    height: auto;
-  }
+.container1 .img1, .container1 .img2, .container1 .img3, .container1 .img4,
+.container2 .img1, .container2 .img2, .container2 .img3, .container2 .img4 {
+  flex: 1 1 calc(25% - 10px); /* Make images flexible and adjust for gaps */
+  box-sizing: border-box;
 }
 
-@media only screen and (max-width: 768px) {
-  .Gallary .container1,
-  .Gallary .container2 {
-    flex-direction: column;
-    align-items: center;overflow: hidden;
-  }
+.container1 img, .container2 img {
+  width: 100%; /* Ensure images fill their containers */
+  height: auto; /* Maintain aspect ratio */
+}
 
-  .Gallary img {
-    height: auto;
-    max-height: 350px;
+@media (max-width: 768px) {
+  .container1, .container2 {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+  }
+  .container1 .img1, .container1 .img2, .container1 .img3, .container1 .img4,
+  .container2 .img1, .container2 .img2, .container2 .img3, .container2 .img4 {
+    flex: 1 1 100%; /* Ensure images take full width */
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .Gallary img {
-    max-height: 250px;
-  }
-}
 
 .counter-section {
   box-shadow: 0px -60px 67px 0px rgba(0, 0, 0, 0.75);
@@ -1022,7 +1032,7 @@ html {
   .box2,
   .box3,
   .box4 {
-    width: 80%;
+    width: 86%;
     height:400px;
     margin-bottom: 20px;
   }
