@@ -1595,7 +1595,11 @@ html {
 .contact_title_section {
   color: var(--secondary-color);
 }
-
+@media only screen and (max-width: 375px) {
+    #form-right {
+      right: 63px !important;
+    }
+  }
 .contact_title_section h1 {
   font-size: 55px;
   margin-top: 15px;
