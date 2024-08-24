@@ -1630,6 +1630,7 @@ html {
 .contact_navbar .contact_info-bar {
   position: relative;
   top: 40px;
+  padding-bottom: 40px;
 }
 
 .contact_info-bar a {
@@ -1736,6 +1737,7 @@ html {
 
   .contact_heading_content {
     padding-left: 10px;
+    padding-bottom: 30px;
   }
 
   .contact_navbar {
