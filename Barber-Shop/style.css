@@ -878,15 +878,7 @@ html {
     flex: 1 1 calc(50% - 10px); /* 2 images per row on mobile screens */
   }
 }
-.another{
-  max-width: 100%;
-  background: var(--primary-color);
-}
-#counter-wrapper{
-  max-width: 40%;
-  background: var(--primary-color);
-}
-
+ 
 
 .counter-section {
   box-shadow: 0px -60px 67px 0px rgba(0, 0, 0, 0.75);
