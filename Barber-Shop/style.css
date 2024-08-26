@@ -967,9 +967,9 @@ html {
 
 @media (max-width: 480px) {
   
-  .counter-box {
-    flex: 1 1 auto;
-    min-width: auto;
+.counter-box {
+    flex: 1 1 150px;
+    min-width: 160px;
   }
 
   .count {
