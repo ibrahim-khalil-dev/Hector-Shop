@@ -50,24 +50,23 @@ body {
     max-width: 1400px; /* Further limit expansion on very large screens */
   }
 }
-
-/* Mobile Styles */
+ 
 @media (max-width: 768px) {
   .wrapper {
-    min-width: 100%; /* Allow the wrapper to adjust on smaller screens */
+    min-width: 100%;  
   }
 
   .Home, .Header, .info-bar, .nav-bar, .sidebar {
-    min-width: 100%; /* Ensure elements use full width */
+    min-width: 100%;  
   }
 
   .nav-bar {
-    flex-direction: column; /* Stack nav items vertically on small screens */
-    align-items: flex-start; /* Align items to the start */
+    flex-direction: column; 
+    align-items: flex-start;  
   }
 
   .sidebar {
-    flex: 1 1 auto; /* Allow sidebar to adjust width */
+    flex: 1 1 auto; 
     max-width: 100%; /* Ensure sidebar does not exceed screen width */
   }
 
@@ -932,7 +931,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1 1 200px;
+  flex: 1 1 150px;
   min-width: 200px;
   overflow: hidden;
 }
@@ -967,7 +966,7 @@ html {
 
 @media (max-width: 480px) {
   
-.counter-box {
+  .counter-box {
     flex: 1 1 150px;
     min-width: 160px;
   }
@@ -1817,10 +1816,10 @@ html {
 .menu-items1 a {
   color: var(--accent-color);
   flex-direction: row;
-  margin: 20px;
+  margin: 10px;
   position: relative;
   top: 50px;
-  text-decoration: none;
+  text-decoration: none; 
 }
 .menu-items1 a:hover {
   color: var(--secondary-color);
