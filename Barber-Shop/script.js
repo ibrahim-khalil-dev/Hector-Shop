@@ -1,9 +1,31 @@
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('show'); 
-    
-     
+    sidebar.classList.toggle('show');
 }
+
+// Close sidebar when clicking outside or on a menu item
+document.addEventListener('click', function(event) {
+    const sidebar = document.getElementById('sidebar');
+    const menuIcon = document.querySelector('.menu-icon');
+    
+    // Check if the sidebar is currently open
+    if (sidebar.classList.contains('show')) {
+        // Check if the click was outside the sidebar or on a menu item
+        if (!sidebar.contains(event.target) && event.target !== menuIcon) {
+            sidebar.classList.remove('show');
+        }
+    }
+});
+
+// Add click event listener to all menu items to close the sidebar
+const menuItems = document.querySelectorAll('.menu-items a');
+menuItems.forEach(item => {
+    item.addEventListener('click', function() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.remove('show');
+    });
+});
+
 
 // Form submit event listener
 document.querySelector('.contact form').addEventListener('submit', function(event) {
