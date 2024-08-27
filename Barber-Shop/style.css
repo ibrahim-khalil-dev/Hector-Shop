@@ -13,79 +13,11 @@
 }
 @media only screen and (min-width: 376px) and (max-width: 428px) {
   .contact-form {
-    height: 100vh; /* Ensure height is 100vh for iPhone 12/Pro Max/XR */
+    height: 100vh !important; /* Ensure height is 100vh for iPhone 12/Pro Max/XR */
   }
 }
 body {
   background: #f3f3f5;
-}
- /* General Styles */
-.wrapper {
-  max-width: 1200px; /* Prevent content from expanding too much */
-  margin: 0 auto; /* Center the wrapper */ 
-  overflow: hidden;
-}
-
-.Home, .Header, .info-bar, .nav-bar, .sidebar {
-  width: 100%; /* Make sure the content spans the width of the wrapper */
-  box-sizing: border-box; /* Include padding and border in the width/height */
-}
-
-.wrapper {
-  min-width: 1345px; /* Prevent layout from shrinking too much */
-}
-
-.Home, .Header, .info-bar, .nav-bar, .sidebar {
-  min-width: 320px; /* Consistent with the wrapper */
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between; /* Adjust space between nav items */
-}
-
-.sidebar {
-  flex: 0 0 250px; /* Fixed width for sidebar */
-  max-width: 300px; /* Limit the expansion */
-}
-
-@media (min-width: 1600px) {
-  .wrapper {
-    max-width: 1400px; /* Further limit expansion on very large screens */
-  }
-}
- 
-@media (max-width: 768px) {
-  .wrapper {
-    min-width: 100%;  
-  }
-
-  .Home, .Header, .info-bar, .nav-bar, .sidebar {
-    min-width: 100%;  
-  }
-
-  .nav-bar {
-    flex-direction: column; 
-    align-items: flex-start;  
-  }
-
-  .sidebar {
-    flex: 1 1 auto; 
-    max-width: 100%; /* Ensure sidebar does not exceed screen width */
-  }
-
-  /* Adjust other elements if needed */
-}
-
-/* Extra Small Screens */
-@media (max-width: 480px) {
-  .Home, .Header, .info-bar, .nav-bar, .sidebar {
-    padding: 10px; /* Adjust padding for smaller screens */
-  }
-
-  .nav-bar {
-    padding: 0; /* Remove extra padding on nav-bar */
-  }
 }
 
 .Home {
