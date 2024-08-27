@@ -1061,7 +1061,7 @@ html {
   .box3,
   .box4 {
     width: 80%;
-    height:720px;
+    height:400px;
     margin-bottom: 20px;
   }
 }
@@ -1463,7 +1463,7 @@ html {
   
   .form-group input, .form-group label, select {
     position: relative;
-    left: 77px;
+    left: 48px;
     top: 20px;
   }
   
@@ -1546,7 +1546,7 @@ html {
   }
 
   .submit {
-    width: 90%;
+    width: 48%;
     max-width: none;
   }
 }
