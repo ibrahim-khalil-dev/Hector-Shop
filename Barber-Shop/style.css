@@ -1358,6 +1358,7 @@ html {
   }
 } 
 /* Base styles for laptop screens */
+/* Base Styles (Mobile-First) */
 .contact {
   background: var(--primary-color);
   display: flex;
@@ -1371,7 +1372,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(icons-044-Laptop-view.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1394,7 +1394,7 @@ html {
 }
 
 .contact-form {
-  width: 60%;
+  width: 100%; /* Full width for mobile-first */
   color: var(--secondary-color);
 }
   
@@ -1457,41 +1457,40 @@ html {
 /* Mobile screen (iPhone SE) and similar small devices */
 @media (max-width: 480px) {
   .form-group {
-    width: 80%;
-    height: 70px;
+    width: 100%; /* Ensure full width */
   }
-  
-  .form-group input, .form-group label, select {
-    position: relative;
-    left: 48px;
-    top: 20px;
-  }
-  
+
   .submit {
-    position: relative;
-    top: 15px;
-    left: 90px !important;
+    width: 100%; /* Full width for buttons */
+    height: 50px;
+    line-height: 50px;
   }
-  
+
   .contact-form {
-    width: 100%;
-    height: 130vh;
+    height: auto; /* Auto height for better responsiveness */
   }
 
   .services-title h1 {
     font-size: 1.2rem;
   }
-  
-  .submit {
-    height: 50px;
-    line-height: 50px;
-  }
 }
 
 /* Tablet and larger mobile screens (like iPads) */
-@media (max-width: 834px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .contact-form {
-    width: 55%;
+    width: 70%;
+  }
+
+  .services-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-group {
+    width: 100%; /* Consistent width */
+  }
+  
+  .submit {
+    width: 100%; /* Full width for submit button */
   }
 }
 
@@ -1514,55 +1513,32 @@ html {
 
   .contact-form {
     width: 100%;
-  }
-}
-
-/* Styles for small tablets, smaller laptops, and larger mobile devices */
-@media (max-width: 768px) {
-  .contact-form {
     background: url(icons-044-Laptop-view.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
+}
 
-  .services-title h1 {
-    font-size: 1.5rem;
+/* Larger screens (laptops and desktops) */
+@media only screen and (min-width: 1025px) {
+  .contact {
+    padding: 20px; /* Restore original padding */
   }
 
-  .form-group {
-    position: relative;
-    left: 50px;
-  }
-  
-  .submit {
-    position: relative;
-    left: 50px;
+  .contact-image {
+    display: block; /* Ensure image is visible on larger screens */
+    width: 40%;
   }
 
-  .form-row {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .submit {
-    width:84%;
-    max-width: none;
+  .contact-form {
+    width: 60%;
   }
 }
 
 /* Adjustments for larger screens beyond laptop */
-@media only screen and (min-width: 1024px) {
-  .contact {
-    padding: 20px; /* Same padding as the base, but allows for higher resolutions */
-  }
-
-  .contact-image {
-    width: 40%; /* Maintain image width for larger screens */
-  }
-}
 @media (min-width:834px){
-  .btn-contact{
+  .btn-contact {
     position: relative;
     left: 55px;
   }
@@ -1581,10 +1557,12 @@ html {
   cursor: pointer;
   transition: background 0.3s, border-color 0.3s;
 }
+
 .btn-contact:hover {
   background: var(--accent-color);
   color: var(--primary-color);
 }
+
 .social-buttons {
   display: flex; 
   flex-wrap: wrap;
