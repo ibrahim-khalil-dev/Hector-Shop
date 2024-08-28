@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <body>
-    <div class="wrapper">
+     
    
         <section class="Home" id="home">
             <div class="Main-Container"> 
@@ -40,28 +40,32 @@
             </ul>
         </div>
         
-                <nav class="nav-bar">  
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#"><img id="logo-mbl" src="Barber-Shop/Logos-02.png" alt="Logos-02"></a>
-                    <a href="#page">Page</a>
-                    <a href="#blog">Blog</a>
-                    <a href="#contact">Contact</a> 
-                </nav>
+        <div class="navbar-wrapper">
+            <nav class="nav-bar">  
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#"><img id="logo-mbl" src="Barber-Shop/Logos-02.png" alt="Logos-02"></a>
+              <a href="#page">Page</a>
+              <a href="#blog">Blog</a>
+              <a href="#contact">Contact</a> 
+            </nav>
+          </div>
                 <div class="Header">
                     <h1>BEST BARBER <br><span>SHOP</span></h1>
                     <h3>in Chicago Downtown</h3>
                     <button>BOOK AN APPOINMENT</button> 
-                    <nav class="info-bar">  
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i>
+                    <div class="info-bar-wrapper">
+                        <nav class="info-bar">  
+                          <a href="#"><i class="fa-brands fa-whatsapp"></i>
                             +021-8547-555 <p>Customer Care</p></a>   
-                        <a href="#">
+                          <a href="#">
                             <i class="fa-solid fa-location-crosshairs"></i> Jl. Soekarno-hatta 
                             <p>Head Office</p></a>  
-                        <a href="#"><i class="fa-regular fa-clock"></i>Open Monday-Sunday   
+                          <a href="#"><i class="fa-regular fa-clock"></i>Open Monday-Sunday   
                             <p>10 am – 5 pm (Last order 5 pm)</p></a>
-                    </nav> 
+                        </nav>
+                      </div>
                 </div>
             </div>   
         </section>
@@ -69,24 +73,34 @@
         <button id="scroll-to-top" title="Scroll to Top">↑</button>
     
         <section class="slider__container"> 
-            <div class="slider-container"><p style="position: relative; bottom: 50px;">POPULAR HAIRCUTS FOR MEN</p>
+           
+
+         <div class="slider-container">
+            <p style="position: relative; bottom: 50px;">POPULAR HAIRCUTS FOR MEN</p>
+               <div class="slider-wrapper"> 
                 <div class="container" style="background-image: none;">
-              <div class="slider" style="position: relative; left: 150px;">
-                  <div class="slider-track">
-                      <div class="slide"><img src="Barber-Shop/hairstyle01.jpg" alt="Image 1"> <p>Short Hair</p></div>
-                      <div class="slide"><img src="Barber-Shop/hairstyle04.jpg" alt="Image 4"> <p>One Sided</p></div>
-                      <div class="slide"><img src="Barber-Shop/hairstyle03.jpg" alt="Image 3"> <p>Buzz Cut</p></div>
-                      <div class="slide"><img src="Barber-Shop/hairstyle04.jpg" alt="Image 4"> <p>High Fade</p></div>
-                      <div class="slide"><img src="Barber-Shop/hairstyle01.jpg" alt="Image 1"> <p>Short Hair</p></div>
-                      <div class="slide"><img src="Barber-Shop/hairstyle01.jpg" alt="Image 2"> <p>One Sided</p></div>
-                      <div class="slide"><img src="Barber-Shop/hairstyle03.jpg" alt="Image 3"> <p>Buzz Cut</p></div>
-                      <div class="slide"><img src="Barber-Shop/hairstyle04.jpg" alt="Image 4"> <p>High Fade</p></div>
-                      <div class="slide"><img src="Barber-Shop/hairstyle01.jpg" alt="Image 1"> <p>Meduim Length Hair Cut</p></div> <!-- Repeated for smooth transition -->
-                  </div>
-              </div>
-          </div>  
+                    <div class="slider">
+                        <div class="slider-track"> 
+                          <div class="slide"><img src="Barber-Shop/hairstyle01.jpg" alt="Slide 1"><p>Slide 1</p></div>
+                          <div class="slide"><img src="Barber-Shop/hairstyle02.jpg" alt="Slide 2"><p>Slide 2</p></div>
+                          <div class="slide"><img src="Barber-Shop/hairstyle03.jpg" alt="Slide 3"><p>Slide 3</p></div>
+                          <div class="slide"><img src="Barber-Shop/hairstyle04.jpg" alt="Slide 4"><p>Slide 4</p></div>
+                          <div class="slide"><img src="Barber-Shop/hairstyle05.jpg" alt="Slide 5"><p>Slide 5</p></div>
+          
+                          <div class="slide"><img src="Barber-Shop/hairstyle06.jpg" alt="Slide 1"><p>Slide 1</p></div>
+                          <div class="slide"><img src="Barber-Shop/hairstyle07.jpg" alt="Slide 2"><p>Slide 2</p></div>
+                          <div class="slide"><img src="Barber-Shop/hairstyle04.jpg" alt="Slide 3"><p>Slide 3</p></div>
+                          <div class="slide"><img src="Barber-Shop/hairstyle07.jpg" alt="Slide 4"><p>Slide 4</p></div>
+                          <div class="slide"><img src="Barber-Shop/hairstyle02.jpg" alt="Slide 5"><p>Slide 5</p></div>
+                        </div>
+                      </div>
+            </div>  
+          </div>
         </section>
      <section  class="about_container" id="about">
+       
+
+   
             <div class="About" > 
           <div class="title"  >
           <h3>
@@ -111,7 +125,8 @@
                   
                 </div>
             </div>
-        </div>
+        </div>     
+    </div>
           </section>
           <section class="gallary" id="page"><div class="Gallary">
             <div class="container1">
@@ -127,10 +142,8 @@
             <div class="img4"><img src="Barber-Shop/hectorjpg-03-1024x683.jpg" alt="Image"></div> 
         </div> 
     </section>
-        
-      
- <section class="counter-section" >
- 
+               
+ <section class="counter-section" > 
             <div class="counter-box">
                 <div class="count" data-target="2003" style="position: relative; top: 50px;">0</div>
                 <div class="title" style="position: relative; top: 50px;">Established Since</div>
@@ -146,12 +159,15 @@
             <div class="counter-box">
                 <div class="count" data-target="21" style="position: relative; top: 50px;">0</div>
                 <div class="title" style="position: relative; top: 50px;">Years Experience</div>
-            </div></section>
-           
+            </div>  
+        </section> 
            
     
             <section class="service-container" id="services"> 
-                <div class="services">
+               
+
+               
+                <div class="services"> <div class="services-wrapper">
                     <div class="box1">
                       <img src="Barber-Shop/icons-09.png" class="icons-siccors" alt="Image">
                        <h2>Long Hair Cut</h2>
@@ -171,8 +187,8 @@
                       <img src="Barber-Shop/icons-08.png" class="icons-siccors" alt="Image">
                        <h2>Long Hair Cut</h2>
                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, consectetur!</p> 
-                  </div>
-                  </div>
+                  </div></div>
+                  </div> 
     
                   <div class="services-container">
                     <div class="services-title">
@@ -252,7 +268,7 @@
                             <h1>MEET BARBERS</h1>
                         </div> 
                     </div>
-                    <div class="team-box">
+                    <div class="team-box">   
                         <div class="box1">
                             <img src="Barber-Shop/icons-022.png" class="icons-siccors" alt="Image">
                              <h2>Muneeb</h2>
@@ -271,7 +287,7 @@
                              <h2>Mike</h2>
                              <p> dolor </p> 
                         </div>
-                    </div>
+                    </div>      
                 </div>
             </section>   <hr id="hrt">
             <section class="team" id="teamy"> 
@@ -394,64 +410,67 @@
             </div>
         </div>
     </section> 
-        <section class="contact_us_section">
-            <div class="contact_section_content">
-                 <div class="contact_heading_content">
-                    <div class="contact_title_section">
-                        <h3>
-                        <img src="Barber-Shop/icons-014.png" alt="Image">
-                        <span>Contact us</span>
-                        </h3>
-                        <h1>CHICAGO DOWNTOWN</h1> 
-                        </div>
     
-                 </div>
-                 <div class="contact_navbar">
-                        <nav class="contact_info-bar">  
-                            <a href="#">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                 +021-8547-555 
-                                 <p>Customer Care</p>
-                                </a>   
-                                <a href="#">
-                                <i class="fa-solid fa-location-crosshairs"></i>
-                                 Jl. Soekarno-hatta 
-                                <p>Head Office</p>
-                            </a>  
-                                <a href="#">
-                                    <i class="fa-regular fa-clock"></i>
-                                    Open Monday-Sunday   
-                                <p>10 am – 5 pm (Last order 5 pm)</p>
-                            </a>
-                            </nav> 
-                        <nav class="contact_info-bar">  
-                            <div class="hours-container">
-                                <div class="hours">
-                                    <p><strong style="margin-right: 150px;">Mon:</strong> <strong>Closed</strong> </p>
-                                    <p><strong style="margin-right: 150px;">Tue:</strong> <strong>10 am – 8 pm</strong></p>
-                                    <p><strong style="margin-right: 150px;">We:</strong> <strong>10 am – 8 pm</strong></p>
-                                    <p><strong style="margin-right: 150px;">Thu:</strong> <strong>10 am – 8 pm</strong></p>
-                                    <p><strong style="margin-right: 150px;">Frid:</strong> <strong>10 am – 8 pm</strong></p>
-                                    <p><strong style="margin-right: 150px;">Sat:</strong> <strong>10 am – 5 pm</strong></p>
-                                    <p><strong style="margin-right: 150px;">Sun:</strong> <strong>10 am – 5 pm</strong></p>
-                                   
-                                </div>
-                            </nav> 
-                 </div>
-                 <div class="contact_buttons">
-                    <div class="social-buttons">
-                        <div>
-                         <button class="btn-contact"  >FaceBook</button>
-                     <button class="btn-contact"  >Instagram</button>       
-                        </div>
-                     <div><button class="btn-contact" >Tiktok</button> 
-                        <button class="btn-contact" >Twitter</button> </div>
-                     
-                    </div> 
-                 </div>
-            </div>
-            <div class="map">
-                <img src="Barber-Shop/map.jpg" alt="map">
+        <section class="contact_us_section">
+            <div class="contact_us_section-wrapper">
+                <div class="contact_section_content">
+                    <div class="contact_heading_content">
+                       <div class="contact_title_section">
+                           <h3>
+                           <img src="Barber-Shop/icons-014.png" alt="Image">
+                           <span>Contact us</span>
+                           </h3>
+                           <h1>CHICAGO DOWNTOWN</h1> 
+                           </div>
+       
+                    </div>
+                    <div class="contact_navbar">
+                           <nav class="contact_info-bar">  
+                               <a href="#">
+                                   <i class="fa-brands fa-whatsapp"></i>
+                                    +021-8547-555 
+                                    <p>Customer Care</p>
+                                   </a>   
+                                   <a href="#">
+                                   <i class="fa-solid fa-location-crosshairs"></i>
+                                    Jl. Soekarno-hatta 
+                                   <p>Head Office</p>
+                               </a>  
+                                   <a href="#">
+                                       <i class="fa-regular fa-clock"></i>
+                                       Open Monday-Sunday   
+                                   <p>10 am – 5 pm (Last order 5 pm)</p>
+                               </a>
+                               </nav> 
+                           <nav class="contact_info-bar">  
+                               <div class="hours-container">
+                                   <div class="hours">
+                                       <p><strong style="margin-right: 150px;">Mon:</strong> <strong>Closed</strong> </p>
+                                       <p><strong style="margin-right: 150px;">Tue:</strong> <strong>10 am – 8 pm</strong></p>
+                                       <p><strong style="margin-right: 150px;">We:</strong> <strong>10 am – 8 pm</strong></p>
+                                       <p><strong style="margin-right: 150px;">Thu:</strong> <strong>10 am – 8 pm</strong></p>
+                                       <p><strong style="margin-right: 150px;">Frid:</strong> <strong>10 am – 8 pm</strong></p>
+                                       <p><strong style="margin-right: 150px;">Sat:</strong> <strong>10 am – 5 pm</strong></p>
+                                       <p><strong style="margin-right: 150px;">Sun:</strong> <strong>10 am – 5 pm</strong></p>
+                                      
+                                   </div>
+                               </nav> 
+                    </div>
+                    <div class="contact_buttons">
+                       <div class="social-buttons">
+                           <div>
+                            <button class="btn-contact"  >FaceBook</button>
+                        <button class="btn-contact"  >Instagram</button>       
+                           </div>
+                        <div><button class="btn-contact" >Tiktok</button> 
+                           <button class="btn-contact" >Twitter</button> </div>
+                        
+                       </div> 
+                    </div>
+               </div>
+               <div class="map">
+                   <img src="Barber-Shop/map.jpg" alt="map">
+               </div>
             </div>
         </section> 
          
