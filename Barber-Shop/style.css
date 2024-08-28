@@ -1082,12 +1082,15 @@ html {
   }
 }
 
+ 
+
 @media (max-width: 768px) {
+ 
   .box1,
   .box2,
   .box3,
   .box4 {
-    width: 77%;
+    width: 78%;
     height:400px;
     margin-bottom: 20px;
     position: relative;
@@ -1271,8 +1274,8 @@ html {
   height: 300px;
   width: 250px;
   z-index: 2; 
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%) !important;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%) !important;
 }
 
 .team-box .box1 h2 {
