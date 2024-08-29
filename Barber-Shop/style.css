@@ -236,8 +236,8 @@ body {
 
 .Header button:hover {
   border: 5px double var(--background-color);
-  color: var(--background-color);
-  transform: translateY(-5px);
+  color: var(--background-color); 
+  transform: translateY(-7px);
 }
 
 .fa-whatsapp,
@@ -1081,7 +1081,6 @@ html {
     background-image: url(icons-040.png);
   }
 }
-
  
 
 @media (max-width: 768px) {
@@ -1094,7 +1093,7 @@ html {
     height:400px;
     margin-bottom: 20px;
     position: relative;
-    left: 30px;
+    left: 40px;
   }
 }
 
@@ -1392,7 +1391,67 @@ html {
     color: var(--text-color);  
   }
 }  
- 
+/* Hide the slider by default */
+
+#slider-container-second {
+  display: none; /* Initially hidden */
+}
+
+@media (max-width: 480px) {
+  #teamy-boxes{
+    display: none;
+  }
+  #slider-container-second .box1{
+    position: relative;
+    left: 150px;
+  }
+  #slider-container-second {
+      display: flex; /* Show only on mobile screens */
+      position: relative;
+      width: 100%;
+      max-width: 315px; /* Match card width */
+      margin: auto;
+      overflow: hidden;
+      align-items: center;
+  }
+
+  .slider-wrapper {
+      overflow: hidden;
+      width: 100%;
+  }
+
+  .card-slider {
+      display: flex;
+      transition: transform 0.5s ease;
+  }
+
+  .card-item {
+      min-width: 315px; /* Adjust to match card width */
+      box-sizing: border-box;
+  }
+
+  button.prev,
+  button.next {
+      background-color: #49986e;
+      color: white;
+      border: none;
+      border-radius: 50%; 
+      height: 30px;
+      width: 30px; 
+      cursor: pointer;
+      font-size: 24px;
+  }
+  button.prev{
+    position: relative;
+    left: -40px;
+    top: 30px;
+  }
+  button.prev:disabled,
+  button.next:disabled {
+      background-color: #cccccc;
+  }
+}
+
 .contact {
   background: var(--primary-color);
   display: flex;
