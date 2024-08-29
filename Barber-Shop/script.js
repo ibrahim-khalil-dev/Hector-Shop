@@ -162,3 +162,4 @@ sliderContainer.addEventListener('mouseup', () => {
 });
  
 startAutoScroll();
+ 
